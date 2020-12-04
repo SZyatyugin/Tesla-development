@@ -1,0 +1,45 @@
+.slider-top {
+    @for $i from 1 through 3 {
+        .itm-#{$i} {
+            background-image: url("../assets/images/header-bg-img-#{$i}.jpg");
+        }
+    }
+    .slider__item {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+}
+.slider {
+    ul {
+        display: flex;
+    }
+    li {
+        list-style-type: none;
+        margin: 0 5px;
+    }
+    .slick-dots {
+        margin: -55px auto 0 auto;
+        position: relative;
+        z-index: 6;
+        max-width: 1230px;
+        padding: 0 15px;
+        button {
+            border-radius: 50px;
+            width: 15px;
+            height: 15px;
+            background-color: #0b0b0b;
+            border: none;
+            padding: 0;
+            font-size: 0;
+            cursor: pointer;
+            outline: none;
+        }
+        .slick-active {
+            button {
+                background-color: white;
+            }
+        }
+    }
+}
