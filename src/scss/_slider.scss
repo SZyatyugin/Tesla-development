@@ -1,14 +1,14 @@
 .slider-top {
     @for $i from 1 through 3 {
         .itm-#{$i} {
-            background-image: url("../assets/images/header-bg-img-#{$i}.jpg");
+            background-image: url("../assets/images/zaz-#{$i}.jpg");
         }
     }
     .slider__item {
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center center;
     }
 }
 .slider {
